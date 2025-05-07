@@ -1,0 +1,205 @@
+/* Hero Section - Final Clean Version */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('../images/milk.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero container and layout */
+.hero-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 5;
+}
+
+/* Logo Container */
+.logo-container {
+    margin-bottom: 60px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 20px;
+}
+
+.logo-image {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Content Container */
+.content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Logo directly above content */
+.logo-above-content {
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: -300px; /* Moving the logo upward by approximately 8cm */
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 10;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 700px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 50px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Typography */
+.hero h1 {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Improved mobile responsiveness for hero section */
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .logo-above-content {
+        max-width: 180px;
+        margin-bottom: 20px;
+        margin-top: -250px;
+    }
+    
+    .hero-content {
+        padding: 25px;
+    }
+}
+
+/* Button */
+.hero .btn {
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #789174;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.hero .btn:hover {
+    background-color: #8da289;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-wrapper {
+        padding: 40px 20px;
+    }
+    
+    .logo-container {
+        margin-bottom: 40px;
+    }
+    
+    .logo-image {
+        max-width: 200px;
+    }
+    
+    .hero-content {
+        padding: 30px 25px;
+        width: 95%;
+    }
+    
+    .hero h1 {
+        font-size: 2.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-wrapper {
+        padding: 30px 15px;
+    }
+    
+    .logo-container {
+        margin-bottom: 30px;
+    }
+    
+    .logo-image {
+        max-width: 160px;
+    }
+    
+    .hero-content {
+        padding: 25px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,261 @@
+/* Removing Header and Navigation Related Styles */
+.navbar,
+.header,
+.nav-menu,
+.hamburger {
+    display: none;
+}
+
+/* Compact Transparent Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: -200px; /* Gizli bau015flangu0131u00e7 pozisyonu */
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    max-width: 600px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(120, 145, 116, 0.1);
+    backdrop-filter: blur(10px);
+    transition: bottom 0.4s ease;
+}
+
+.bottom-nav.show {
+    bottom: 15px; /* Gu00f6sterilen pozisyon */
+}
+
+.bottom-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.bottom-nav li {
+    margin: 0 15px;
+}
+
+.bottom-nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.bottom-nav a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #789174;
+    transition: width 0.3s ease;
+}
+
+.bottom-nav a:hover,
+.bottom-nav a.active {
+    color: #789174;
+}
+
+.bottom-nav a:hover:after,
+.bottom-nav a.active:after {
+    width: 100%;
+}
+
+/* Mobil Optimizasyon - Alt Navigasyon */
+@media (max-width: 768px) {
+    .bottom-nav {
+        padding: 10px;
+        max-width: 90%;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(120, 145, 116, 0.3);
+    }
+    
+    .bottom-nav ul {
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .bottom-nav li {
+        margin: 0 8px;
+    }
+    
+    .bottom-nav a {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 10px;
+    }
+    
+    /* Navigasyon ikonlaru0131 */
+    .bottom-nav a:before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 16px;
+        margin-bottom: 4px;
+        display: block;
+    }
+    
+    .bottom-nav a[href="#home"]:before {
+        content: '\f015'; /* ev ikonu */
+    }
+    
+    .bottom-nav a[href="#about"]:before {
+        content: '\f05a'; /* bilgi ikonu */
+    }
+    
+    .bottom-nav a[href="#products"]:before {
+        content: '\f49e'; /* u00fcru00fcn ikonu */
+    }
+    
+    .bottom-nav a[href="#vision"]:before {
+        content: '\f06e'; /* gu00f6z ikonu */
+    }
+    
+    .bottom-nav a[href="#contact"]:before {
+        content: '\f0e0'; /* e-posta ikonu */
+    }
+}
+
+@media (max-width: 576px) {
+    .bottom-nav {
+        padding: 8px;
+        max-width: 85%;
+    }
+    
+    .bottom-nav li {
+        margin: 0 5px;
+    }
+    
+    .bottom-nav a {
+        font-size: 11px;
+        letter-spacing: 0;
+        padding: 5px;
+    }
+    
+    .bottom-nav a:before {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    .bottom-nav {
+        max-width: 90%;
+        padding: 8px 5px;
+        bottom: -200px; /* Gizli bau015flangu0131u00e7 pozisyonu */
+        border-radius: 12px;
+    }
+    
+    .bottom-nav.show {
+        bottom: 15px;
+    }
+    
+    .bottom-nav li {
+        margin: 0 3px;
+    }
+    
+    .bottom-nav a {
+        font-size: 10px;
+    }
+    
+    .bottom-nav a:before {
+        font-size: 12px;
+    }
+}
+
+/* Mobil Iu00e7in Au00e7u0131lu0131r Kapanu0131r Menu00fc */
+.mobile-menu-toggle {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(120, 145, 116, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+    background-color: rgba(120, 145, 116, 1);
+    transform: scale(1.05);
+}
+
+.mobile-menu-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu-toggle.active i {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 400px) {
+    .mobile-menu-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+/* Logo styles */
+#stationary-logo,
+#fixed-logo,
+.logo-container,
+#stationary-logo a,
+#stationary-logo img,
+#stationary-logo a:hover img,
+#fixed-logo a,
+#fixed-logo img,
+#fixed-logo a:hover img {
+    display: none !important;
+}
+
+/* Tamamen Bağımsız Sabit Logo */
+#stationary-logo,
+#fixed-logo,
+.logo-container {
+    display: none;
+}
+
+#stationary-logo a {
+    display: inline-block;
+    pointer-events: auto;
+    transition: transform 0.4s ease;
+}
+
+#stationary-logo img {
+    height: 250px;
+    width: auto;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.2));
+    transition: all 0.4s ease;
+}
+
+#stationary-logo a:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}

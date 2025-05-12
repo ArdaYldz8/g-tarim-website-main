@@ -130,18 +130,18 @@
             <div class="contact-content">
                 <div class="contact-form">
                     <h3>Bize Ulaşın</h3>
-                    <form id="contactForm">
+                    <form id="contactForm" method="POST" action="https://formspree.io/f/mblozlwl">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Adınız Soyadınız" required>
+                            <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="E-posta Adresiniz" required>
+                            <input type="email" id="email" name="email" placeholder="E-posta Adresiniz" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Telefon Numaranız">
+                            <input type="text" id="subject" name="subject" placeholder="Konu" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" placeholder="Mesajınız" required></textarea>
+                            <textarea id="message" name="message" placeholder="Mesajınız" required></textarea>
                         </div>
                         <button type="submit" class="btn">Gönder</button>
                     </form>
@@ -152,11 +152,14 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <p>Gebze, Kocaeli<br>Türkiye</p>
                     </div>
-                    <!-- Phone and email removed as requested -->
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:info@gtarim.com">info@gtarim.com</a></p>  
+                    </div>
                     <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        
+                        <a href="https://www.instagram.com/gtarim.tr/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@gtarim.tr?lang=en" target="_blank"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
@@ -179,10 +182,10 @@
                     </div>
                     <p class="footer-slogan">Doğadan Gelen Lüks</p>
                     <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        
+                        <a href="https://www.instagram.com/gtarim.tr/" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@gtarim.tr?lang=en" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        
                     </div>
                 </div>
                 
@@ -201,7 +204,7 @@
                     <h4>İletişim Bilgileri</h4>
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> Gebze, Kocaeli, Türkiye</li>
-                        <!-- Phone and email removed as requested -->
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@gtarim.com">info@gtarim.com</a></li>
                         <li><i class="fas fa-clock"></i> Pzt-Cmt: 09:00 - 18:00</li>
                     </ul>
                 </div>
@@ -305,12 +308,6 @@
             }).scroll();
 
             // Form submission handling
-            $('#contactForm').submit(function(e) {
-                e.preventDefault();
-                alert('Teşekkürler! Mesajınız gönderildi. En kısa sürede size dönüş yapacağız.');
-                this.reset();
-            });
-            
             $('#newsletterForm').submit(function(e) {
                 e.preventDefault();
                 alert('Bültenimize başarıyla abone oldunuz!');

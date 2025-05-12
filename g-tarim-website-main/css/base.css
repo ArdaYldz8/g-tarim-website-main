@@ -1,0 +1,121 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, 
+        rgba(255, 255, 255, 0.75) 0%, 
+        rgba(255, 255, 255, 0.65) 30%,
+        rgba(255, 255, 255, 0.55) 70%,
+        rgba(255, 255, 255, 0.65) 100%), 
+        url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Subtle texture overlay */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('data:image/png;base64,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');
+    opacity: 0.02;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #789174; /* Soft green accent color */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #789174;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #617a5c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    color: #1a1a1a;
+    font-size: 3rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #789174, #a1c59b);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Temiz Scrolling Stilleri */
+html {
+    scroll-behavior: smooth;
+}

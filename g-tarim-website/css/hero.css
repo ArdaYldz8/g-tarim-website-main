@@ -68,6 +68,23 @@
     animation: fadeInLeft 1s ease-out;
 }
 
+/* Hero Logo */
+.hero-logo {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.logo-image {
+    max-width: 200px;
+    height: auto;
+    filter: drop-shadow(0 4px 15px rgba(44, 85, 48, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
 /* Heritage Badge */
 .heritage-badge {
     display: inline-block;
@@ -387,6 +404,10 @@
         padding: 40px 20px;
     }
     
+    .hero-logo {
+        text-align: center;
+    }
+    
     .hero-title {
         font-size: 3.5rem;
     }
@@ -406,6 +427,15 @@
         gap: 40px;
         padding: 20px 15px;
         min-height: auto;
+    }
+    
+    .hero-logo {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .logo-image {
+        max-width: 160px;
     }
     
     .hero-title {
@@ -453,6 +483,10 @@
     
     .hero-subtitle {
         font-size: 1rem;
+    }
+    
+    .logo-image {
+        max-width: 140px;
     }
     
     .heritage-badge {

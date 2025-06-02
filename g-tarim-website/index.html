@@ -2,110 +2,112 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G Tarım - Doğadan Gelen Lüks</title>
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/responsive-optimized.css">
-    <link rel="stylesheet" href="css/mobile-enhanced.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- AOS Animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
     
-    <!-- Meta tags for better mobile SEO -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    
+    <!-- Meta -->
     <meta name="description" content="G Tarım - Doğal keçi sütü ve peyniri üreticisi. Gebze'den doğallığın ve kalitenin adresi.">
-    <meta name="keywords" content="keçi sütü, keçi peyniri, doğal ürünler, organik, Gebze, G Tarım">
-    <meta name="author" content="G Tarım">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph for social sharing -->
-    <meta property="og:title" content="G Tarım - Doğadan Gelen Lüks">
-    <meta property="og:description" content="Doğal keçi sütü ve peyniri üreticisi">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://gtarim.com">
 </head>
 <body>
-    <!-- HERO SECTION -->
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#products">Ürünlerimiz</a></li>
+                <li><a href="#vision">Vizyonumuz</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-wrapper">
+        <div class="container">
             <div class="hero-content">
-                <!-- Logo -->
                 <div class="hero-logo">
-                    <img src="images/logo.png" alt="G Tarım Logo" class="logo-image">
+                    <img src="images/logo.png" alt="G Tarım" class="hero-logo-img">
                 </div>
-                
-                <!-- Main Content -->
                 <h1 class="hero-title">Doğadan Gelen Lüks</h1>
-                
-                <p class="hero-subtitle">
-                    G Tarım olarak, geleneksel çiftçilik bilgisini modern tekniklerle harmanlayarak, 
-                    sofranıza en taze ve doğal ürünleri ulaştırıyoruz.
-                </p>
-                
-                <div class="hero-action">
-                    <a href="#products" class="btn-hero">Ürünlerimizi Keşfet</a>
-                </div>
+                <p class="hero-subtitle">G Tarım olarak, geleneksel çiftçilik bilgisini modern tekniklerle harmanlayarak, sofranıza en taze ve doğal ürünleri ulaştırıyoruz.</p>
+                <a href="#products" class="btn-primary">Ürünlerimizi Keşfet</a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">Hakkımızda</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Üç nesildir süregelen tecrübemizle G Tarım'da, keçi sütü ve geleneksel keçi peynirini katkısız ve doğal hâliyle sofranıza getiriyoruz.</p>
-                    
-                    <h4>Katkısız ve Doğal Üretim</h4>
-                    <p>Ürünlerimizde koruyucu, kıvam arttırıcı ya da yapay aroma kullanmayız. Hammaddelerimizi doğaya ve hayvan refahına saygılı koşullarda temin eder, her adımda aynı özeni gösteririz.</p>
-                    
-                    <h4>Aile Değerleri ve Şeffaflık</h4>
-                    <p>Küçük ölçekli, güvenilir yapımız sayesinde ürünlerimizin hikâyesi sofranıza kadar takip edilebilir; her lokmada aile emeğinin izini taşırsınız.</p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">Hakkımızda</h2>
+            </div>
+            <div class="about-grid">
                 <div class="about-image">
                     <img src="images/background.png" alt="G Tarım Çiftliği">
+                </div>
+                <div class="about-content">
+                    <p class="about-intro">Üç nesildir süregelen tecrübemizle G Tarım'da, keçi sütü ve geleneksel keçi peynirini katkısız ve doğal hâliyle sofranıza getiriyoruz.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <h3>Katkısız ve Doğal Üretim</h3>
+                            <p>Ürünlerimizde koruyucu, kıvam arttırıcı ya da yapay aroma kullanmayız. Hammaddelerimizi doğaya ve hayvan refahına saygılı koşullarda temin ederiz.</p>
+                        </div>
+                        <div class="feature">
+                            <h3>Aile Değerleri ve Şeffaflık</h3>
+                            <p>Küçük ölçekli, güvenilir yapımız sayesinde ürünlerimizin hikâyesi sofranıza kadar takip edilebilir; her lokmada aile emeğinin izini taşırsınız.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="products">
+    <section class="products" id="products">
         <div class="container">
-            <h2 class="section-title">Ürünlerimiz</h2>
-            <div class="product-cards">
+            <div class="section-header">
+                <h2 class="section-title">Ürünlerimiz</h2>
+            </div>
+            <div class="products-grid">
                 <div class="product-card">
                     <div class="product-image">
                         <img src="images/milk.png" alt="Organik Süt">
                     </div>
-                    <div class="product-details">
+                    <div class="product-info">
                         <h3>Organik Süt</h3>
                         <p>Gebze'de özgürce dolaşan 'Saanen' keçilerimizden elde edilen, hiçbir katkı maddesi içermeyen tamamen doğal süt.</p>
-                        <a href="#contact" class="btn">Sipariş Ver</a>
+                        <a href="#contact" class="btn-secondary">Sipariş Ver</a>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
                         <img src="images/cheese.png" alt="Keçi Peyniri">
                     </div>
-                    <div class="product-details">
+                    <div class="product-info">
                         <h3>Keçi Peyniri</h3>
                         <p>Dağ yamaçlarında otlayan keçilerimizden elde edilen sütlerle hazırlanan, geleneksel yöntemlerle olgunlaştırılmış peynirler.</p>
-                        <a href="#contact" class="btn">Sipariş Ver</a>
+                        <a href="#contact" class="btn-secondary">Sipariş Ver</a>
                     </div>
                 </div>
             </div>
@@ -113,23 +115,28 @@
     </section>
 
     <!-- Vision Section -->
-    <section id="vision" class="vision">
+    <section class="vision" id="vision">
         <div class="container">
-            <h2 class="section-title" style="border: none; border-bottom: none; background: none;">Vizyonumuz</h2>
+            <div class="section-header">
+                <h2 class="section-title">Vizyonumuz</h2>
+            </div>
             <div class="vision-content">
-                <div class="vision-message">
-                    <p>G Tarım olarak vizyonumuz, doğal tarımı yaygınlaştırarak gelecek nesillere daha sağlıklı bir dünya bırakmaktır. Üretim süreçlerimizde sürdürülebilirliği ön planda tutarak doğaya saygılı yöntemler kullanıyoruz.</p>
-                </div>
-                <div class="future-products">
-                    <div class="future-product product-box-1">
-                        <i class="fas fa-seedling"></i>
+                <p class="vision-intro">G Tarım olarak vizyonumuz, doğal tarımı yaygınlaştırarak gelecek nesillere daha sağlıklı bir dünya bırakmaktır.</p>
+                
+                <div class="vision-grid">
+                    <div class="vision-card">
+                        <div class="vision-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
                         <h3>Hedefimiz</h3>
-                        <p>Doğal ve sağlıklı ürünleri herkes için erişilebilir kılmak, yerel üreticileri destekleyerek bölge ekonomisine katkıda bulunmak ve tüketicilerimizin sağlıklı beslenme alışkanlıkları edinmelerine yardımcı olmaktır.</p>
+                        <p>Doğal ve sağlıklı ürünleri herkes için erişilebilir kılmak, yerel üreticileri destekleyerek bölge ekonomisine katkıda bulunmak.</p>
                     </div>
-                    <div class="future-product product-box-2">
-                        <i class="fas fa-egg"></i>
+                    <div class="vision-card">
+                        <div class="vision-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
                         <h3>Ürün Çeşitliliği</h3>
-                        <p>Talep ve ihtiyaçlar doğrultusunda, aynı kalite standardına sahip seçkin üretici ortaklarımızla çalışarak ürün yelpazemizi geliştiriyoruz. Tüm süreçlerde değişmeyen ilkemiz: doğallığı ve aile sıcaklığını, güvenle sofralarınıza taşımak.</p>
+                        <p>Aynı kalite standardına sahip seçkin üretici ortaklarımızla çalışarak ürün yelpazemizi geliştiriyoruz. İlkemiz: doğallığı ve aile sıcaklığını güvenle sofralarınıza taşımak.</p>
                     </div>
                 </div>
             </div>
@@ -137,39 +144,50 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">İletişim</h2>
-            <div class="contact-content">
+            <div class="section-header">
+                <h2 class="section-title">İletişim</h2>
+            </div>
+            <div class="contact-grid">
                 <div class="contact-form">
                     <h3>Bize Ulaşın</h3>
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Adınız Soyadınız" required>
+                            <input type="text" name="name" placeholder="Adınız Soyadınız" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="E-posta Adresiniz" required>
+                            <input type="email" name="email" placeholder="E-posta Adresiniz" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Telefon Numaranız">
+                            <input type="tel" name="phone" placeholder="Telefon Numaranız">
                         </div>
                         <div class="form-group">
-                            <textarea id="message" placeholder="Mesajınız" required></textarea>
+                            <textarea name="message" placeholder="Mesajınız" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Gönder</button>
+                        <button type="submit" class="btn-primary">Gönder</button>
                     </form>
                 </div>
                 <div class="contact-info">
                     <h3>İletişim Bilgilerimiz</h3>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p>Gebze, Kocaeli<br>Türkiye</p>
+                        <div>
+                            <strong>Adres</strong>
+                            <p>Gebze, Kocaeli<br>Türkiye</p>
+                        </div>
                     </div>
-                    <!-- Phone and email removed as requested -->
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Çalışma Saatleri</strong>
+                            <p>Pzt-Cmt: 09:00 - 18:00</p>
+                        </div>
+                    </div>
                     <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
@@ -181,148 +199,88 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="footer-logo">
-                        <img src="images/logo.png" alt="G Tarım Logo">
-                    </div>
+                    <img src="images/logo.png" alt="G Tarım" class="footer-logo">
                     <p class="footer-slogan">Doğadan Gelen Lüks</p>
+                    <p class="footer-description">Üç nesildir Gebze'de geleneksel yöntemlerle, modern hijyen standartlarında üretim yapıyoruz.</p>
                     <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
-                <div class="footer-nav">
-                    <h4>Hızlı Bağlantılar</h4>
-                    <ul>
-                        <li><a href="#home">Ana Sayfa</a></li>
-                        <li><a href="#about">Hakkımızda</a></li>
-                        <li><a href="#products">Ürünlerimiz</a></li>
-                        <li><a href="#vision">Vizyonumuz</a></li>
-                        <li><a href="#contact">İletişim</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h4>İletişim Bilgileri</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Gebze, Kocaeli, Türkiye</li>
-                        <!-- Phone and email removed as requested -->
-                        <li><i class="fas fa-clock"></i> Pzt-Cmt: 09:00 - 18:00</li>
-                    </ul>
-                </div>
-
-                <div class="footer-newsletter">
-                    <h4>Bültenimize Abone Olun</h4>
-                    <p>Yeni ürünlerimiz, mevsimlik hasatlar ve özel kampanyalarımızdan haberdar olun.</p>
-                    <form id="newsletterForm" class="newsletter-form">
-                        <div class="form-group">
-                            <input type="email" placeholder="E-posta Adresiniz" required>
-                            <button type="submit" class="btn-submit">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Sayfalar</h4>
+                        <ul class="footer-nav">
+                            <li><a href="#home">Ana Sayfa</a></li>
+                            <li><a href="#about">Hakkımızda</a></li>
+                            <li><a href="#products">Ürünlerimiz</a></li>
+                            <li><a href="#vision">Vizyonumuz</a></li>
+                            <li><a href="#contact">İletişim</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>İletişim</h4>
+                        <div class="footer-info">
+                            <p><i class="fas fa-map-marker-alt"></i> Gebze, Kocaeli, Türkiye</p>
+                            <p><i class="fas fa-clock"></i> Pzt-Cmt: 09:00 - 18:00</p>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             
-            <div class="footer-divider"></div>
-            
             <div class="footer-bottom">
                 <p>&copy; 2025 G Tarım. Tüm Hakları Saklıdır.</p>
-                <div class="footer-legal">
-                    <a href="#">Gizlilik Politikası</a>
-                    <a href="#">Kullanım Koşulları</a>
-                    <a href="#">Çerezler</a>
-                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bottom Navigation for Mobile -->
-    <div class="bottom-nav">
-        <ul>
-            <li><a href="#home" class="active">Ana Sayfa</a></li>
-            <li><a href="#about">Hakkımızda</a></li>
-            <li><a href="#products">Ürünlerimiz</a></li>
-            <li><a href="#vision">Vizyonumuz</a></li>
-            <li><a href="#contact">İletişim</a></li>
-        </ul>
-    </div>
-
-    <!-- Mobile Menu Toggle -->
-    <div class="mobile-menu-toggle">
-        <i class="fas fa-bars"></i>
-    </div>
-
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function() {
-            // Show bottom navigation after scrolling
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 300) {
-                    $('.bottom-nav').addClass('show');
-                } else {
-                    $('.bottom-nav').removeClass('show');
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
                 }
             });
+        });
 
-            // Mobile menu toggle
-            $('.mobile-menu-toggle').click(function() {
-                $('.bottom-nav').toggleClass('show');
-            });
+        // Navbar Background on Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
 
-            // Smooth scrolling for navigation links
-            $('a[href^="#"]').on('click', function(e) {
-                e.preventDefault();
-                var target = $(this.hash);
-                
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 800);
-                    
-                    // Update active link
-                    $('.bottom-nav a').removeClass('active');
-                    $(this).addClass('active');
-                    
-                    // If on mobile, close menu after clicking
-                    if ($(window).width() < 768) {
-                        $('.bottom-nav').removeClass('show');
-                        setTimeout(function() {
-                            $('.bottom-nav').addClass('show');
-                        }, 1000);
-                    }
-                }
-            });
-
-            // Update active navigation based on scroll position
-            $(window).scroll(function() {
-                var scrollDistance = $(window).scrollTop();
-                
-                // Assign active class to nav links based on section position
-                $('section').each(function(i) {
-                    if ($(this).position().top - 100 <= scrollDistance) {
-                        $('.bottom-nav a.active').removeClass('active');
-                        $('.bottom-nav a').eq(i).addClass('active');
-                    }
-                });
-            }).scroll();
-
-            // Form submission handling
-            $('#contactForm').submit(function(e) {
-                e.preventDefault();
-                alert('Teşekkürler! Mesajınız gönderildi. En kısa sürede size dönüş yapacağız.');
-                this.reset();
-            });
-            
-            $('#newsletterForm').submit(function(e) {
-                e.preventDefault();
-                alert('Bültenimize başarıyla abone oldunuz!');
-                this.reset();
-            });
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Teşekkürler! Mesajınız gönderildi. En kısa sürede size dönüş yapacağız.');
+            this.reset();
         });
     </script>
 </body>

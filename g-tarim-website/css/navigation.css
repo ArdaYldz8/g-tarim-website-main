@@ -61,13 +61,13 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #789174;
+    background-color: #204c58;
     transition: width 0.3s ease;
 }
 
 .bottom-nav a:hover,
 .bottom-nav a.active {
-    color: #789174;
+    color: #204c58;
 }
 
 .bottom-nav a:hover:after,

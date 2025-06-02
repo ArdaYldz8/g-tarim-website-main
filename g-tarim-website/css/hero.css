@@ -1,9 +1,10 @@
 /* Hero Section - Final Clean Version */
 .hero {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('../images/milk.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/background-pattern.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     position: relative;
     color: white;
     padding: 0;
@@ -38,7 +39,7 @@
 }
 
 .logo-image {
-    max-width: 400px;
+    max-width: 230px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -58,10 +59,10 @@
 
 /* Logo directly above content */
 .logo-above-content {
-    max-width: 400px;
+    max-width: 230px;
     height: auto;
-    margin-bottom: 30px;
-    margin-top: -300px; /* Moving the logo upward by approximately 8cm */
+    margin-bottom: 20px;
+    margin-top: -250px; /* Moving the logo upward but not as much */
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
     opacity: 1 !important;
     visibility: visible !important;
@@ -126,7 +127,7 @@
     padding: 14px 30px;
     font-size: 1.1rem;
     border-radius: 5px;
-    background-color: #789174;
+    background-color: #204c58;
     color: white;
     border: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);

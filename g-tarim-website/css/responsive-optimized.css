@@ -9,7 +9,7 @@
   --border-radius-sm: 8px;
   --border-radius-md: 12px;
   --border-radius-lg: 16px;
-  --primary-color: #789174;
+  --primary-color: #204c58;
   --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -217,7 +217,7 @@ a.btn,
 
 .future-product i {
   font-size: 2.5rem;
-  color: #789174;
+  color: #204c58;
   margin-bottom: 15px;
 }
 
@@ -256,7 +256,7 @@ a.btn,
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #789174;
+  border-color: #204c58;
   box-shadow: 0 0 0 2px rgba(120, 145, 116, 0.2);
 }
 
@@ -373,7 +373,7 @@ a.btn,
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: linear-gradient(to right, #789174, #a1c59b);
+  background: linear-gradient(to right, #204c58, #2c6d7e);
   border-radius: 2px;
 }
 
@@ -398,7 +398,7 @@ a.btn,
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   transition: all 0.3s ease;
-  border-left: 4px solid #789174;
+  border-left: 4px solid #204c58;
   position: relative;
   overflow: hidden;
 }
@@ -423,7 +423,7 @@ a.btn,
 
 .future-product i {
   font-size: 2.8rem;
-  color: #789174;
+  color: #204c58;
   margin-bottom: 15px;
   position: relative;
   z-index: 1;

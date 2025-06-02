@@ -47,7 +47,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: #789174;
+    background: #204c58;
     transition: width 0.3s cubic-bezier(0.58, 0.3, 0.005, 1);
 }
 
@@ -58,7 +58,7 @@
 .bottom-nav a.active::after {
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, #789174, #a1c59b);
+    background: linear-gradient(to right, #204c58, #2c6d7e);
 }
 
 /* Form Etkileşim Efektleri */
@@ -80,7 +80,7 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #789174;
+    border-color: #204c58;
     box-shadow: 0 0 0 3px rgba(120, 145, 116, 0.15);
     outline: none;
     background-color: #fff;
@@ -109,7 +109,7 @@
     top: 0;
     left: 0;
     height: 3px;
-    background: linear-gradient(to right, #789174, #a1c59b);
+    background: linear-gradient(to right, #204c58, #2c6d7e);
     z-index: 9999;
     width: 0;
     transition: width 0.2s ease;
@@ -162,7 +162,7 @@
     height: 60px;
     border: 3px solid #eee;
     border-radius: 50%;
-    border-top: 3px solid #789174;
+    border-top: 3px solid #204c58;
     animation: spin 1s linear infinite;
 }
 

@@ -54,7 +54,7 @@
 
 .footer-slogan {
     font-family: 'Playfair Display', serif;
-    color: #789174;
+    color: #204c58;
     margin: 5px 0 20px;
     font-size: 1.2rem;
     font-style: italic;
@@ -74,7 +74,7 @@
     height: 40px;
     background-color: #fff;
     border-radius: 50%;
-    color: #789174;
+    color: #204c58;
     font-size: 18px;
     transition: all 0.3s ease;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@
 }
 
 .social-link:hover {
-    background-color: #789174;
+    background-color: #204c58;
     color: #fff;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -114,7 +114,7 @@
     bottom: 0;
     width: 40px;
     height: 2px;
-    background-color: #789174;
+    background-color: #204c58;
 }
 
 .footer-nav ul,
@@ -140,13 +140,13 @@
     content: '›';
     position: absolute;
     left: -15px;
-    color: #789174;
+    color: #204c58;
     opacity: 0;
     transition: all 0.3s ease;
 }
 
 .footer-nav a:hover {
-    color: #789174;
+    color: #204c58;
     padding-left: 18px;
 }
 
@@ -163,7 +163,7 @@
 }
 
 .footer-contact i {
-    color: #789174;
+    color: #204c58;
     width: 20px;
     text-align: center;
 }
@@ -192,7 +192,7 @@
 
 .newsletter-form input:focus {
     outline: none;
-    border-color: #789174;
+    border-color: #204c58;
     box-shadow: 0 0 0 3px rgba(120, 145, 116, 0.1);
 }
 
@@ -202,7 +202,7 @@
     top: 5px;
     bottom: 5px;
     width: 40px;
-    background: #789174;
+    background: #204c58;
     color: white;
     border: none;
     border-radius: 4px;
@@ -250,7 +250,7 @@
 }
 
 .footer-legal a:hover {
-    color: #789174;
+    color: #204c58;
 }
 
 /* Responsive Styles */

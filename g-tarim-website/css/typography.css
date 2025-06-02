@@ -66,8 +66,8 @@ body, p, button, input, textarea, .btn {
     top: -10px;
     width: 40px;
     height: 40px;
-    border-top: 3px solid #a1c59b;
-    border-left: 3px solid #a1c59b;
+    border-top: 3px solid #2c6d7e;
+    border-left: 3px solid #2c6d7e;
     opacity: 0.8;
 }
 
@@ -78,8 +78,8 @@ body, p, button, input, textarea, .btn {
     bottom: -10px;
     width: 40px;
     height: 40px;
-    border-bottom: 3px solid #a1c59b;
-    border-right: 3px solid #a1c59b;
+    border-bottom: 3px solid #2c6d7e;
+    border-right: 3px solid #2c6d7e;
     opacity: 0.8;
 }
 
@@ -94,8 +94,8 @@ body, p, button, input, textarea, .btn {
 
 /* Marka Renk Paleti */
 :root {
-    --primary-color: #789174;
-    --primary-light: #a1c59b;
+    --primary-color: #204c58;
+    --primary-light: #2c6d7e;
     --primary-dark: #556d52;
     --accent-color: #d4a373;
     --text-color: #1a1a1a;

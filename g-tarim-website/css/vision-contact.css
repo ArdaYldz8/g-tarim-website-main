@@ -87,7 +87,7 @@
 }
 
 .vision-text strong {
-    color: #789174;
+    color: #204c58;
     font-weight: 600;
     font-size: 1.25rem;
     background: linear-gradient(120deg, rgba(120, 145, 116, 0.2), rgba(120, 145, 116, 0.2));
@@ -148,7 +148,7 @@
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(to right, #789174, #a1c59b);
+    background: linear-gradient(to right, #204c58, #2c6d7e);
 }
 
 .future-product:hover {
@@ -161,7 +161,7 @@
     height: 120px;
     font-size: 3.5rem;
     color: white;
-    background: linear-gradient(135deg, #789174, #a1c59b);
+    background: linear-gradient(135deg, #204c58, #2c6d7e);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -183,7 +183,7 @@
 }
 
 .future-product p {
-    color: #789174;
+    color: #204c58;
     font-weight: 600;
     font-size: 1.2rem;
     letter-spacing: 0.5px;
@@ -240,7 +240,7 @@
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 15px;
-    color: #789174;
+    color: #204c58;
 }
 
 .contact-info h3:after {
@@ -250,7 +250,7 @@
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #789174;
+    background-color: #204c58;
 }
 
 .contact-info ul {
@@ -274,7 +274,7 @@
 
 .contact-info li i {
     font-size: 1.4rem;
-    color: #789174;
+    color: #204c58;
     margin-right: 15px;
     min-width: 25px;
     text-align: center;
@@ -289,7 +289,7 @@
     margin-bottom: 25px;
     position: relative;
     padding-bottom: 15px;
-    color: #789174;
+    color: #204c58;
 }
 
 .contact-form h3:after {
@@ -299,7 +299,7 @@
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #789174;
+    background-color: #204c58;
 }
 
 .form-group {
@@ -339,7 +339,7 @@
     font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: linear-gradient(to right, #789174, #a1c59b);
+    background: linear-gradient(to right, #204c58, #2c6d7e);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
@@ -530,7 +530,7 @@
         padding: 12px;
         font-size: 0.95rem;
         border-radius: 25px;
-        background: linear-gradient(135deg, #789174 0%, #a1c59b 100%);
+        background: linear-gradient(135deg, #204c58 0%, #2c6d7e 100%);
         border: none;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         transition: all 0.3s ease;

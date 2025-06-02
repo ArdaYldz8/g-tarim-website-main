@@ -1,10 +1,10 @@
-/* Hero Section - Final Clean Version */
+/* Hero Section - Enhanced Mobile Version */
 .hero {
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('../images/background-pattern.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Changed from fixed for mobile performance */
     position: relative;
     color: white;
     padding: 0;
@@ -62,7 +62,7 @@
     max-width: 230px;
     height: auto;
     margin-bottom: 20px;
-    margin-top: -250px; /* Moving the logo upward but not as much */
+    margin-top: -150px; /* Reduced negative margin for mobile */
     filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
     opacity: 1 !important;
     visibility: visible !important;
@@ -73,10 +73,10 @@
 .hero-content {
     max-width: 700px;
     width: 90%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly more transparent for mobile */
     padding: 40px 50px;
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
+    border-radius: 12px; /* Increased border radius */
+    backdrop-filter: blur(8px); /* Increased blur */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
@@ -87,8 +87,9 @@
     margin-bottom: 25px;
     color: white;
     font-size: 3.5rem;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8); /* Enhanced text shadow */
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .hero p {
@@ -96,66 +97,114 @@
     margin-bottom: 30px;
     font-weight: 400;
     line-height: 1.6;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Improved mobile responsiveness for hero section */
-@media (max-width: 576px) {
-    .hero h1 {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
-    }
-    
-    .hero p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-    
-    .logo-above-content {
-        max-width: 180px;
-        margin-bottom: 20px;
-        margin-top: -250px;
-    }
-    
-    .hero-content {
-        padding: 25px;
-    }
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7); /* Enhanced text shadow */
+    color: #f5f5f5; /* Slightly lighter color */
 }
 
 /* Button */
 .hero .btn {
-    padding: 14px 30px;
+    padding: 16px 32px; /* Increased padding */
     font-size: 1.1rem;
-    border-radius: 5px;
-    background-color: #204c58;
+    border-radius: 25px; /* More rounded */
+    background: linear-gradient(45deg, #204c58, #2c5530); /* Gradient background */
     color: white;
     border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgba(32, 76, 88, 0.3); /* Enhanced shadow */
     transition: all 0.3s ease;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600; /* Increased font weight */
     letter-spacing: 0.5px;
     display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .hero .btn:hover {
-    background-color: #8da289;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #2c5530, #8da289);
+    transform: translateY(-3px); /* More pronounced hover effect */
+    box-shadow: 0 8px 20px rgba(32, 76, 88, 0.4);
 }
 
-/* Media Queries */
+.hero .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(32, 76, 88, 0.3);
+}
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 576px) {
+    .hero {
+        background-attachment: scroll !important; /* Force scroll on mobile */
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+    
+    .hero-wrapper {
+        padding: 30px 15px;
+    }
+    
+    .logo-container {
+        margin-bottom: 20px;
+    }
+    
+    .logo-image {
+        max-width: 160px;
+    }
+    
+    .logo-above-content {
+        max-width: 160px;
+        margin-top: -80px; /* Less negative margin on mobile */
+        margin-bottom: 15px;
+    }
+    
+    .hero-content {
+        width: 95%;
+        padding: 25px 20px;
+        border-radius: 10px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem !important;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 0.95rem !important;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    
+    .hero .btn {
+        width: 100%;
+        max-width: 250px;
+        padding: 15px 20px;
+        font-size: 1rem;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Medium Mobile Devices */
 @media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll !important;
+    }
+    
     .hero-wrapper {
         padding: 40px 20px;
     }
     
     .logo-container {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
     
     .logo-image {
-        max-width: 200px;
+        max-width: 180px;
+    }
+    
+    .logo-above-content {
+        max-width: 180px;
+        margin-top: -120px;
     }
     
     .hero-content {
@@ -164,43 +213,105 @@
     }
     
     .hero h1 {
-        font-size: 2.4rem;
-        margin-bottom: 15px;
+        font-size: 2.2rem;
+        margin-bottom: 18px;
     }
     
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         margin-bottom: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-wrapper {
-        padding: 30px 15px;
-    }
-    
-    .logo-container {
-        margin-bottom: 30px;
-    }
-    
-    .logo-image {
-        max-width: 160px;
-    }
-    
-    .hero-content {
-        padding: 25px 20px;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .hero p {
-        font-size: 1rem;
     }
     
     .hero .btn {
-        padding: 12px 25px;
+        padding: 14px 28px;
         font-size: 1rem;
+    }
+}
+
+/* Very Small Mobile Devices */
+@media (max-width: 375px) {
+    .hero-wrapper {
+        padding: 25px 10px;
+    }
+    
+    .logo-image,
+    .logo-above-content {
+        max-width: 140px;
+    }
+    
+    .logo-above-content {
+        margin-top: -60px;
+    }
+    
+    .hero-content {
+        padding: 20px 15px;
+        width: 98%;
+    }
+    
+    .hero h1 {
+        font-size: 1.6rem !important;
+    }
+    
+    .hero p {
+        font-size: 0.9rem !important;
+    }
+    
+    .hero .btn {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Mobile Orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+    
+    .hero-wrapper {
+        padding: 20px 15px;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .logo-container {
+        margin-bottom: 0;
+        margin-right: 30px;
+        flex-shrink: 0;
+    }
+    
+    .logo-above-content {
+        display: none; /* Hide duplicate logo in landscape */
+    }
+    
+    .content-container {
+        margin-top: 0;
+        flex: 1;
+    }
+    
+    .hero-content {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* Performance Optimizations */
+.hero,
+.hero-wrapper,
+.hero-content {
+    will-change: transform;
+    transform: translate3d(0, 0, 0); /* Force GPU acceleration */
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .hero .btn {
+        transition: none;
+    }
+    
+    .hero .btn:hover {
+        transform: none;
     }
 }

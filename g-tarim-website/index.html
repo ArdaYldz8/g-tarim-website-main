@@ -14,18 +14,16 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Main CSS -->
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/micro-interactions.css">
+    <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/responsive-optimized.css">
-    
-    <!-- Enhanced Mobile CSS - Load Last for Priority -->
     <link rel="stylesheet" href="css/mobile-enhanced.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     
     <!-- Meta tags for better mobile SEO -->
     <meta name="description" content="G Tarım - Doğal keçi sütü ve peyniri üreticisi. Gebze'den doğallığın ve kalitenin adresi.">
@@ -38,27 +36,90 @@
     <meta property="og:description" content="Doğal keçi sütü ve peyniri üreticisi">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://gtarim.com">
-    
-    <!-- CSS styles moved to hero.css -->
 </head>
 <body>
-    <!-- Hero Section - Rebuilt from scratch -->
-    <section id="home" class="hero">
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
         <div class="hero-wrapper">
-            <!-- Logo Container -->
-            <div class="logo-container">
-                <img src="images/logo.png" alt="G Tarım Logo" class="logo-image">
+            <!-- Left Column - Content -->
+            <div class="hero-content-column">
+                <div class="heritage-badge">
+                    <i class="fas fa-leaf"></i>
+                    2010'dan Beri Organik Çiftçilik
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="line-1">Doğadan</span>
+                    <span class="line-2">Gelen</span>
+                    <span class="line-3">Lüks</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    G Tarım olarak, geleneksel çiftçilik bilgisini modern tekniklerle harmanlayarak, 
+                    sofranıza en taze ve doğal ürünleri ulaştırıyoruz.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#products" class="btn-primary">
+                        <i class="fas fa-shopping-basket"></i>
+                        Ürünlerimizi Keşfet
+                    </a>
+                    <a href="#about" class="btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Hikayemizi İzle
+                    </a>
+                </div>
             </div>
             
-            <!-- Content Container -->
-            <div class="content-container">
-                <!-- Logo directly above content -->
-                <img src="images/logo.png" alt="G Tarım Logo" class="logo-above-content">
-                
-                <div class="hero-content">
-                    <h1>Doğadan Gelen Lüks</h1>
-                    <p>G Tarım, keçi sütü ve peynirinde doğallığın ve kalitenin adı.</p>
-                    <a href="#products" class="btn">Ürünlerimizi Keşfedin</a>
+            <!-- Right Column - Visual -->
+            <div class="hero-visual-column">
+                <div class="product-showcase">
+                    <div class="quality-badges">
+                        <div class="quality-badge">
+                            <i class="fas fa-certificate"></i> %100 Organik
+                        </div>
+                        <div class="quality-badge">
+                            <i class="fas fa-award"></i> Sertifikalı
+                        </div>
+                        <div class="quality-badge">
+                            <i class="fas fa-heart"></i> Doğal
+                        </div>
+                    </div>
+                    
+                    <img src="images/hero-product.png" 
+                         alt="G Tarım Premium Organik Ürünler" 
+                         class="hero-product-image"
+                         loading="eager">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trust Indicators Section -->
+        <div class="hero-trust-section">
+            <div class="trust-indicators">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="trust-text">Ücretsiz Kargo</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="trust-text">%100 Organik</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="trust-text">24 Saat Teslimat</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="trust-text">Güvenli Ödeme</div>
                 </div>
             </div>
         </div>
